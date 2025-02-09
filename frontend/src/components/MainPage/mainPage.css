@@ -1,0 +1,119 @@
+/* Animacja tekstu tęczowego */
+.rainbowText {
+  font-size: 2em;
+  font-weight: bold;
+  animation: rainbow 6s infinite linear;
+  display: inline-block;
+}
+
+@keyframes rainbow {
+  0% { color: red; }
+  16% { color: orange; }
+  32% { color: yellow; }
+  48% { color: green; }
+  64% { color: blue; }
+  80% { color: indigo; }
+  100% { color: violet; }
+}
+
+/* Nagłówek strony */
+.mainPageHText {
+  display: flex;
+  align-items: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Migający kursor */
+.blinkingCursor {
+  animation: blink 1s infinite;
+  margin-left: 5px;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Sekcja lokalizacji */
+.mainPageLocationContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.mainPageLocationContainerImage {
+  width: 25px;
+  height: auto;
+}
+
+.mainPageLocationContainerText {
+  font-size: 18px;
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+/* Przycisk nawigacyjny */
+.mainPageButtonsContainer {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.mainPageButtonsContainerBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 16px;
+  font-weight: bold;
+  width: 220px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.mainPageButtonsContainerBtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Technologie i narzędzia */
+.mainPageTechnologiesAndTools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 15px;
+}
+
+.mainPageTechnologiesAndToolsContainer {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: transform 0.2s;
+}
+
+.mainPageTechnologiesAndToolsContainer:hover {
+  transform: scale(1.1);
+}
+
+.mainPageTechnologiesAndToolsContainerImage {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.mainPageTechnologiesAndToolsContainerText {
+  font-size: 16px;
+  font-weight: 500;
+}

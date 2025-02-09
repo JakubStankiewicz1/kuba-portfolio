@@ -1,0 +1,123 @@
+.page.contactPage {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contactPageContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.contactPageContainerLeft,
+.contactPageContainerRight {
+  width: 48%;
+}
+
+.contactPageContainerLeftTop {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.contactPageContainerLeftOne {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #fff;
+}
+
+.contactInfo {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.contactInfo p {
+  margin: 5px 0;
+}
+
+.profileImage {
+  width: 100%;
+  max-width: 420px;
+  margin-bottom: 20px;
+  border: 3px solid #fff;
+}
+
+.contactButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Zwiększ odstępy między przyciskami */
+  justify-content: center;
+}
+
+.contactButton {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  font-size: 16px;
+  font-weight: bold;
+  width: 220px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.contactButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.contactButton:hover::before {
+  opacity: 1;
+}
+
+.contactButton:hover {
+  transform: scale(1.05);
+}
+
+.contactButton img {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+.contactButton.download {
+  width: 100%;
+  max-width: 300px;
+  background-color: #ff5722;
+}
+
+.contactButton.download:hover::before {
+  background-color: rgba(255, 87, 34, 0.2);
+}
+
+.contactButton.download:hover {
+  background-color: #e64a19;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Wyśrodkuj przyciski w pionie */
+  gap: 20px; /* Zwiększ odstępy między grupami przycisków */
+  justify-content: center;
+}
