@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import MainPage from './components/MainPage/MainPage';
 import ProjectsPage from './components/ProjectsPage/ProjectsPage';
 import ContactPage from './components/ContactPage/ContactPage';
+import './App.css';
 
 const App = () => {
   const location = useLocation();

@@ -199,6 +199,13 @@
   text-decoration: none;
   font-size: 22px;
   font-weight: 700;
+  /* width: 00px; */
+  width: 130px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;  
+  justify-content: center;
 }
 
 .mainPageTechnologiesAndToolsHeader {
@@ -272,6 +279,12 @@
   text-decoration: none;
 }
 
+@media (max-width: 2000px) {
+  .mainPageTechnologiesAndTools {
+    margin-bottom: 50px;
+  }
+}
+
 /* RESPONSYWNOŚĆ */
 @media (max-width: 1024px) {
   .mainPageHText {
@@ -288,6 +301,7 @@
     width: 100%;
     max-width: 300px;
   }
+  
 }
 
 @media (max-width: 768px) {
@@ -305,6 +319,11 @@
 
   .mainPageButtonsContainerBtn {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 500px;
   }
 
   .mainPageHeaderContainer {
