@@ -1,4 +1,4 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import './navbar.css';
 
 const Navbar = () => {
@@ -19,23 +19,23 @@ const Navbar = () => {
 
   return (
     <div className={`navbar ${getActiveClass()}`}>
-      <div className="navItem navItemOne">
+      <NavLink to="/" className="navItem navItemOne">
         <Link to="/" className="navLink">
           <p className="navLinkText">Main</p>
         </Link>
-      </div>
+      </NavLink>
 
-      <div className="navItem navItemTwo">
-        <Link to="/projects" className="navLink">
+      <NavLink to="/projects" className="navItem navItemTwo">
+        <div to="/projects" className="navLink">
           <p className="navLinkText">Projects</p>
-        </Link>
-      </div>
+        </div>
+      </NavLink>
 
-      <div className="navItem navItemThree">
-        <Link to="/contact" className="navLink">
+      <NavLink to="/contact" className="navItem navItemThree">
+        <div className="navLink">
           <p className="navLinkText">Contact</p>
-        </Link>
-      </div>
+        </div>
+      </NavLink>
     </div>
   );
 };
