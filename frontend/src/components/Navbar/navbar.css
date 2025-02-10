@@ -53,12 +53,6 @@
     width: 70px;
 }
 
-.navbar.main-active .navItemOne,
-.navbar.projects-active .navItemTwo,
-.navbar.contact-active .navItemThree {
-    /* transform: translateX(calc(100vw - 70px)); */
-}
-
 .navbar.main-active .navItemTwo {
     transform: translateX(calc(100vw - 214px));
     border-right: 2px solid #fff;

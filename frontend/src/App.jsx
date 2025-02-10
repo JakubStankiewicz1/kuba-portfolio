@@ -1,10 +1,9 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import Navbar from './components/Navbar/Navbar';
 import MainPage from './components/MainPage/MainPage';
 import ProjectsPage from './components/ProjectsPage/ProjectsPage';
 import ContactPage from './components/ContactPage/ContactPage';
-
 
 const App = () => {
   const location = useLocation();
@@ -23,10 +22,4 @@ const App = () => {
   );
 };
 
-const AppWrapper = () => (
-  <Router>
-    <App />
-  </Router>
-);
-
-export default AppWrapper;
+export default App;

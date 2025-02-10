@@ -1,6 +1,6 @@
 {
   "name": "portfolio-website",
-  "homepage": "https://JakubStankiewicz1.github.io/Jakub-Stankiewicz/",
+  "homepage": "https://JakubStankiewicz1.github.io/kuba-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -28,6 +28,7 @@
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.18",
+    "gh-pages": "^3.2.3",
     "globals": "^15.14.0",
     "vite": "^6.1.0"
   }
