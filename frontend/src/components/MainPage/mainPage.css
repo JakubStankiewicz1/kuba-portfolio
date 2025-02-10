@@ -231,37 +231,6 @@
   width: 85%;
   margin-left: auto;
   margin-right: auto;
-  margin-right: 150px;
-  margin-top: 140px;
-}
-
-.mainPageTechnologiesAndToolsHeader {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.mainPageTechnologiesAndToolsHeaderText {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-.mainPageTechnologiesAndTools {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 20px;
 }
 
@@ -334,6 +303,33 @@
   .topRightCorner {
     margin-right: 0;
     justify-content: center;
+  }
+
+  .mainPageTechnologiesAndTools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .mainPageTechnologiesAndToolsContainer {
+    width: 100%;
+    max-width: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .mainPageTechnologiesAndToolsContainerImage {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+  }
+
+  .mainPageTechnologiesAndToolsContainerText {
+    font-size: 12px;
   }
 }
 

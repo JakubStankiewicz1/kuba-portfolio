@@ -19,6 +19,7 @@ const Navbar = () => {
 
   return (
     <div className={`navbar ${getActiveClass()}`}>
+      
       <NavLink to="/" className="navItem navItemOne">
         <Link to="/" className="navLink">
           <p className="navLinkText">Main</p>
