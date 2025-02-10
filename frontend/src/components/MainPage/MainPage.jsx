@@ -94,12 +94,23 @@ const MainPage = () => {
             <p className="mainPageLocationContainerText">Wrocław</p>
           </div>
           <div className="mainPageButtonsContainer">
-            <button className="mainPageButtonsContainerBtn">
-              <NavLink className="mainPageButtonsContainerBtnNav" to="/projects">Projects</NavLink>
-            </button>
-            <button className="mainPageButtonsContainerBtn">
-              <NavLink className="mainPageButtonsContainerBtnNav" to="/contact">Contact</NavLink>
-            </button>
+
+            <NavLink to="/projects" className="mainPageButtonsContainerNavLink">
+              <button className="mainPageButtonsContainerBtn">
+                <p className="mainPageButtonsContainerBtnNav" to="/projects">Projects</p>
+              </button>
+            </NavLink>
+            
+
+            <NavLink to="/contact"  className="mainPageButtonsContainerNavLink">
+              <button className="mainPageButtonsContainerBtn">
+                <p className="mainPageButtonsContainerBtnNav">Contact</p>
+              </button>
+            </NavLink>
+            
+
+
+
           </div>
         </div>
 

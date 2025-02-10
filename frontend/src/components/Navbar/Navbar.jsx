@@ -19,32 +19,23 @@ const Navbar = () => {
 
   return (
     <div className={`navbar ${getActiveClass()}`}>
-
-
       <div className="navItem navItemOne">
-        {/* {location.pathname !== '/' && <Link to="/" className="navLink">Main</Link>} */}
-        <Link to="/" className="navLink"><p className="navLinkText">Main</p></Link>
+        <Link to="/" className="navLink">
+          <p className="navLinkText">Main</p>
+        </Link>
       </div>
 
-      
       <div className="navItem navItemTwo">
-        {/* {location.pathname !== '/projects' && <Link to="/projects" className="navLink">Projects</Link>} */}
-        <Link to="/projects" className="navLink"><p className="navLinkText">Projects</p></Link>
+        <Link to="/projects" className="navLink">
+          <p className="navLinkText">Projects</p>
+        </Link>
       </div>
-
-
-
 
       <div className="navItem navItemThree">
-        {/* {location.pathname !== '/contact' && <Link to="/contact" className="navLink">Contact</Link>} */}
         <Link to="/contact" className="navLink">
           <p className="navLinkText">Contact</p>
         </Link>
       </div>
-
-
-
-
     </div>
   );
 };

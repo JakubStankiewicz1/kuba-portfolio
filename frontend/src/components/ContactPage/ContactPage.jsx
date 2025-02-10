@@ -1,12 +1,14 @@
 import { motion } from 'framer-motion';
 import './contactPage.css';
-import profileImage from './me.jpeg';
+import profileImage from "./myPhoto.jpg";
 
 import gmailIcon from "./icons8-gmail-500.png";
 import pdfIcon from "./pdf-file.png";
 import whatsAppIcon from "./icons8-whatsapp-500.png";
 import linkedInIcon from "./icons8-linkedin-500.png";
 import gitHubIcon from "./icons8-github-512.png";
+
+import Jakub_Stankiewicz_CV from "./cv_pdf.pdf";
 
 const pageVariants = {
   initial: { x: '100%', opacity: 0 },
@@ -28,10 +30,10 @@ const ContactPage = () => {
         <div className="contactPageContainerLeft">
           <p className="contactPageContainerLeftTop">Jakub Stankiewicz</p>
           <p className="contactPageContainerLeftOne">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, eveniet consequatur beatae sequi dolorum.
+          Enthusiastic Cybersecurity student with a strong interest in web development and modern technologies.
           </p>
           <p className="contactPageContainerLeftOne">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ullam! Repudiandae suscipit iure voluptatum.
+          Passionate about learning, coding, and exploring new challenges in the IT world. Always looking to improve my skills and work on exciting projects.
           </p>
           <div className="contactInfo">
             <p>Email: stankiewicz.kuba152@gmail.com</p>
@@ -45,10 +47,10 @@ const ContactPage = () => {
           <div className="buttonsContainer">
 
           <div className="contactButtons">
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="contactButton">
+            <a href="https://github.com/JakubStankiewicz1" target="_blank" rel="noopener noreferrer" className="contactButton">
               <img src={gitHubIcon} alt="GitHub" className="icon" /> GitHub
             </a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="contactButton">
+            <a href="https://www.linkedin.com/in/kuba-stankiewicz-258381300/" target="_blank" rel="noopener noreferrer" className="contactButton">
               <img src={linkedInIcon} alt="LinkedIn" className="icon" /> LinkedIn
             </a>
             <a href="mailto:stankiewicz.kuba152@gmail.com" className="contactButton">
@@ -59,7 +61,7 @@ const ContactPage = () => {
             </a>
           </div>
 
-          <a href="/path-to-your-cv.pdf" download className="contactButton download">
+          <a href={Jakub_Stankiewicz_CV} download className="contactButton download">
               <img src={pdfIcon} alt="PDF" className="icon" />Download Resume
             </a>
 

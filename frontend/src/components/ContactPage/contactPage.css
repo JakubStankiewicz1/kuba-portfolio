@@ -2,13 +2,18 @@
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contactPageContainer {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
   gap: 20px;
+  width: 100%;
+  max-width: 1000px;
 }
 
 .contactPageContainerLeft,
@@ -49,7 +54,7 @@
 .contactButtons {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px; /* Zwiększ odstępy między przyciskami */
+  gap: 15px;
   justify-content: center;
 }
 
@@ -117,7 +122,99 @@
 .buttonsContainer {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Wyśrodkuj przyciski w pionie */
-  gap: 20px; /* Zwiększ odstępy między grupami przycisków */
+  align-items: center;
+  gap: 20px;
   justify-content: center;
+}
+
+/* RESPONSYWNOŚĆ */
+@media (max-width: 1024px) {
+  .contactPageContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactPageContainerLeft,
+  .contactPageContainerRight {
+    width: 100%;
+  }
+
+  .contactPageContainerLeftTop {
+    font-size: 28px;
+  }
+
+  .contactPageContainerLeftOne {
+    font-size: 14px;
+  }
+
+  .contactInfo {
+    font-size: 14px;
+  }
+
+  .profileImage {
+    max-width: 300px;
+  }
+
+  .contactButton {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .contactButton.download {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactPageContainerLeftTop {
+    font-size: 24px;
+  }
+
+  .contactPageContainerLeftOne {
+    font-size: 12px;
+  }
+
+  .contactInfo {
+    font-size: 12px;
+  }
+
+  .profileImage {
+    max-width: 250px;
+  }
+
+  .contactButton {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+
+  .contactButton.download {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactPageContainerLeftTop {
+    font-size: 20px;
+  }
+
+  .contactPageContainerLeftOne {
+    font-size: 10px;
+  }
+
+  .contactInfo {
+    font-size: 10px;
+  }
+
+  .profileImage {
+    max-width: 200px;
+  }
+
+  .contactButton {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .contactButton.download {
+    max-width: 180px;
+  }
 }
