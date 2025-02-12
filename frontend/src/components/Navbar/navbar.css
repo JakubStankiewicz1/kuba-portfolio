@@ -1,134 +1,131 @@
 .navbar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  transition: transform 0.3s ease-in-out;
 }
 
 .navItem {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    transition: transform 0.3s ease-in-out;
-    top: 0;
-    left: 0;
-    text-decoration: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+  top: 0;
+  left: 0;
+  text-decoration: none;
 }
 
 .navLinkText {
-    margin-top: 20px;
-    font-size: 24px;
-    font-weight: 600;
-    letter-spacing: 1.8px;
-    color: #fff;
+  margin-top: 20px;
+  font-size: 2.1vw;
+  font-weight: 600;
+  letter-spacing: 2.6px;
+  color: #fff;
 }
 
 .navLink {
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    transition: color 0.3s;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
 .navLink:hover {
-    color: #ffa500;
+  color: #ffa500;
 }
 
 .navItemOne {
-    background-color: #343A40;
-    height: 100%;
-    width: 3vw;
+  background-color: #343a40;
+  height: 100%;
+  width: 3.5vw;
 }
 
 .navItemTwo {
-    background-color: #343A40;
-    height: 100%;
-    width: 3vw;
+  background-color: #343a40;
+  height: 100%;
+  width: 3.5vw;
 }
 
 .navItemThree {
-    background-color: #343A40;
-    height: 100%;
-    width: 3vw;
+  background-color: #343a40;
+  height: 100%;
+  width: 3.5vw;
 }
 
 .navbar.main-active .navItemTwo {
-    transform: translateX(calc(100vw - 9vw));
-    border-right: 0.2vw solid #fff;
-    border-left: 0.2vw solid #fff;
+  transform: translateX(calc(100vw - 10.5vw));
+  border-right: 0.2vw solid #fff;
+  border-left: 0.2vw solid #fff;
 }
 
 .navbar.main-active .navItemThree {
-    transform: translateX(calc(100vw - 9vw));
+  transform: translateX(calc(100vw - 10.5vw));
 }
 
 .navbar.projects-active .navItemThree {
-    transform: translateX(calc(100vw - 9vw));
-    border-left: 0.2vw solid #fff;
+  transform: translateX(calc(100vw - 10.5vw));
+  border-left: 0.2vw solid #fff;
 }
 
 .navbar.projects-active .navItemTwo {
-    border-left: 0.2vw solid #fff;
+  border-left: 0.2vw solid #fff;
 }
 
 .navbar.contact-active .navItemThree {
-    border-left: 0.2vw solid #fff;
+  border-left: 0.2vw solid #fff;
 }
 
 .navbar.contact-active .navItemOne {
-    border-right: 0.2vw solid #fff;
+  border-right: 0.2vw solid #fff;
 }
 
 .navItem.active .navLinkText {
-    color: #ffa500;
+  color: #ffa500;
 }
 
-/* RESPONSYWNOŚĆ */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        width: 100%;
-        height: auto;
-        background-color: #343A40;
-    }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: #343a40;
+  }
 
-    .navItem {
-        width: 100%;
-        justify-content: center;
-        padding: 1vh 0;
-        /* height: 3vh; */
-    }
+  .navItem {
+    width: 100%;
+    justify-content: center;
+    padding: 1vh 0;
+  }
 
-    .navLinkText {
-        margin-top: 0;
-        font-size: 1.8vh;
-        letter-spacing: 0.12vw;
-    }
+  .navLinkText {
+    margin-top: 0;
+    font-size: 1.8vh;
+    letter-spacing: 0.12vw;
+  }
 
-    .navLink {
-        writing-mode: horizontal-tb;
-        text-orientation: initial;
-    }
+  .navLink {
+    writing-mode: horizontal-tb;
+    text-orientation: initial;
+  }
 
-    .navItemOne,
-    .navItemTwo,
-    .navItemThree {
-        width: 100%;
-        /* height: 3vh; */
-    }
+  .navItemOne,
+  .navItemTwo,
+  .navItemThree {
+    width: 100%;
+  }
 
-    .navbar.main-active .navItemTwo,
-    .navbar.main-active .navItemThree,
-    .navbar.projects-active .navItemThree,
-    .navbar.projects-active .navItemTwo,
-    .navbar.contact-active .navItemThree,
-    .navbar.contact-active .navItemOne {
-        transform: none;
-        border: none;
-    }
+  .navbar.main-active .navItemTwo,
+  .navbar.main-active .navItemThree,
+  .navbar.projects-active .navItemThree,
+  .navbar.projects-active .navItemTwo,
+  .navbar.contact-active .navItemThree,
+  .navbar.contact-active .navItemOne {
+    transform: none;
+    border: none;
+  }
 }

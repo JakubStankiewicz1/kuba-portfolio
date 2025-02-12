@@ -269,4 +269,8 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .projectsPage {
+    padding-bottom: 180px;
+  }
 }

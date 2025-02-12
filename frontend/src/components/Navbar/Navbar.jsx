@@ -1,25 +1,24 @@
-import { Link, NavLink, useLocation } from 'react-router-dom';
-import './navbar.css';
+import { Link, NavLink, useLocation } from "react-router-dom";
+import "./navbar.css";
 
 const Navbar = () => {
   const location = useLocation();
 
   const getActiveClass = () => {
     switch (location.pathname) {
-      case '/':
-        return 'main-active';
-      case '/projects':
-        return 'projects-active';
-      case '/contact':
-        return 'contact-active';
+      case "/":
+        return "main-active";
+      case "/projects":
+        return "projects-active";
+      case "/contact":
+        return "contact-active";
       default:
-        return '';
+        return "";
     }
   };
 
   return (
     <div className={`navbar ${getActiveClass()}`}>
-      
       <NavLink to="/" className="navItem navItemOne">
         <Link to="/" className="navLink">
           <p className="navLinkText">Main</p>
