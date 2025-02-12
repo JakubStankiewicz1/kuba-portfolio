@@ -161,7 +161,7 @@
 
 @media (max-width: 1550px) {
   .projectCard {
-    width: 80%;
+    /* width: 80%; */
     flex-direction: row;
   }
 
@@ -177,13 +177,23 @@
 }
 
 @media (max-width: 1024px) {
+  .projectsContainer {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .projectCard {
     width: 90%;
     flex-direction: column;
   }
 
   .projectImage {
-    width: 100%;
+    height: 300px;
+    width: 97%;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .projectContent {
@@ -225,7 +235,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .title {
     font-size: 1.5rem;
   }
@@ -250,5 +260,13 @@
   .projectLink {
     width: 100%;
     padding: 0.4rem 0.8rem;
+  }
+
+  .projectImage {
+    height: 150px;
+    width: 97%;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
