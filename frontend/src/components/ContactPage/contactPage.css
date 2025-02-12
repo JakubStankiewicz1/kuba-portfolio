@@ -118,6 +118,10 @@
   .contactPageContainerLeft {
     margin-top: 50px;
   }
+
+  .contactPageContainerRight {
+    margin-bottom: 60px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -131,86 +135,3 @@
     margin-top: 350px;
   }
 }
-
-/* @media (max-width: 1024px) {
-  .contactPageContainerRight {
-    margin-top: -100px;
-  }
-
-  .contactPageContainerLeftTop {
-    font-size: 30px;
-  }
-
-  .contactPageContainerLeftOne {
-    font-size: 14px;
-  }
-
-  .contactInfo {
-    font-size: 14px;
-  }
-
-  .profileImage {
-    max-width: 230px;
-  }
-}
-
-@media (max-width: 1010px) {
-  .contactPageContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding-bottom: 100px;
-    padding-top: 100px;
-  }
-}
-
-@media (max-width: 768px) {
-  .contactPageContainer {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
-
-  .contactPageContainerLeftTop {
-    font-size: 28px;
-  }
-
-  .contactPageContainerLeftOne {
-    font-size: 14px;
-  }
-
-  .contactInfo {
-    font-size: 14px;
-  }
-
-  .profileImage {
-    max-width: 220px;
-  }
-
-  .contactPageContainerRight {
-    margin-bottom: 400px;
-  }
-}
-
-@media (max-width: 480px) {
-  .contactPageContainerLeftTop {
-    font-size: 22px;
-  }
-
-  .contactPageContainerLeftOne {
-    font-size: 12px;
-  }
-
-  .contactInfo {
-    font-size: 12px;
-  }
-
-  .profileImage {
-    max-width: 200px;
-  }
-
-  .contactButton {
-    font-size: 14px;
-    padding: 10px 12px;
-  }
-} */

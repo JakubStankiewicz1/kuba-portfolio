@@ -90,40 +90,51 @@ const MainPage = () => {
             className="mainPageHeaderContainerAnimatedText"
           />
           <div className="mainPageLocationContainer">
-            <img src={locationImage} alt="Location" className="mainPageLocationContainerImage" />
+            <img
+              src={locationImage}
+              alt="Location"
+              className="mainPageLocationContainerImage"
+            />
             <p className="mainPageLocationContainerText">Wrocław</p>
           </div>
           <div className="mainPageButtonsContainer">
-
             <NavLink to="/projects" className="mainPageButtonsContainerNavLink">
               <button className="mainPageButtonsContainerBtn">
-                <p className="mainPageButtonsContainerBtnNav" to="/projects">Projects</p>
+                <p className="mainPageButtonsContainerBtnNav" to="/projects">
+                  Projects
+                </p>
               </button>
             </NavLink>
-            
 
-            <NavLink to="/contact"  className="mainPageButtonsContainerNavLink">
+            <NavLink to="/contact" className="mainPageButtonsContainerNavLink">
               <button className="mainPageButtonsContainerBtn">
                 <p className="mainPageButtonsContainerBtnNav">Contact</p>
               </button>
             </NavLink>
-            
-
-
-
           </div>
         </div>
 
         {/* Technologie */}
         <div className="mainPageTechnologiesAndTools">
           <div className="mainPageTechnologiesAndToolsHeader">
-            <p className="mainPageTechnologiesAndToolsHeaderText">Technologies and Tools I use</p>
+            <p className="mainPageTechnologiesAndToolsHeaderText">
+              Technologies and Tools I use
+            </p>
           </div>
-          <div className="mainPageTechnologiesAndTools">
+          <div className="mainPageTechnologiesAndToolsEle">
             {technologies.map((tech, index) => (
-              <div key={index} className="mainPageTechnologiesAndToolsContainer">
-                <img src={tech.img} alt={tech.text} className="mainPageTechnologiesAndToolsContainerImage" />
-                <p className="mainPageTechnologiesAndToolsContainerText">{tech.text}</p>
+              <div
+                key={index}
+                className="mainPageTechnologiesAndToolsContainer"
+              >
+                <img
+                  src={tech.img}
+                  alt={tech.text}
+                  className="mainPageTechnologiesAndToolsContainerImage"
+                />
+                <p className="mainPageTechnologiesAndToolsContainerText">
+                  {tech.text}
+                </p>
               </div>
             ))}
           </div>
