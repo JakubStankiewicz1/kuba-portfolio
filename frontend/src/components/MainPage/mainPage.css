@@ -106,6 +106,10 @@
   margin-top: 20px;
 }
 
+.mainPageButtonsContainerNavLink {
+  text-decoration: none;
+}
+
 .mainPageButtonsContainerBtn {
   display: flex;
   align-items: center;
@@ -241,6 +245,8 @@
 
   .mainPageHeaderContainer {
     margin-left: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .mainPageTechnologiesAndTools {
@@ -253,6 +259,21 @@
 
   .mainPageTechnologiesAndToolsHeaderText {
     font-size: 20px;
+  }
+
+  .mainPageButtonsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mainPageButtonsContainerBtnNav {
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
   }
 }
 
@@ -280,5 +301,12 @@
 
   .mainPageTechnologiesAndTools {
     margin-bottom: 180px;
+  }
+
+  .topRightCorner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
