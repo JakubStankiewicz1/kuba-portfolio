@@ -1,17 +1,17 @@
 .page {
-  padding: 2rem 1rem; /* Zmniejszono padding */
+  padding: 2rem 1rem;
   text-align: center;
   color: #fff;
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 0; /* Usunięto margines górny */
-  margin-bottom: 0; /* Usunięto margines dolny */
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .projectsPage {
-  margin-bottom: 0; /* Usunięto margines dolny */
+  margin-bottom: 0;
 }
 
 .title {
@@ -33,10 +33,11 @@
   display: flex;
   justify-content: center;
   gap: 2rem;
-  margin-top: 2rem; /* Zmniejszono margines górny */
+  margin-top: 2rem;
   flex-wrap: wrap;
   flex-direction: column;
-  margin-bottom: 2rem; /* Zmniejszono margines dolny */
+  margin-bottom: 2rem;
+  align-items: center;
 }
 
 .projectCard {
@@ -56,13 +57,18 @@
 }
 
 .projectImage {
-  width: 40%;
+  width: 35%;
   height: auto;
   object-fit: cover;
   transition: transform 0.3s ease-in-out;
   flex-shrink: 0;
-  width: 400px;
-  height: auto;
+  /* width: 400px; */
+  /* height: auto; */
+  /* margin-left: 15px; */
+  height: 90%;
+  width: auto;
+  margin-left: 1%;
+  margin-right: 2%;
 }
 
 .projectContent {
@@ -153,7 +159,6 @@
   margin-right: 20px;
 }
 
-/* RESPONSYWNOŚĆ */
 @media (max-width: 1550px) {
   .projectCard {
     width: 80%;
@@ -216,7 +221,7 @@
   }
 
   .projectsContainer {
-    margin-bottom: 2rem; /* Zmniejszono margines dolny */
+    margin-bottom: 2rem;
   }
 }
 

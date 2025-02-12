@@ -80,9 +80,7 @@ const ProjectsPage = () => {
       setInterval(() => {
         setCurrentImageIndexes((prevIndexes) =>
           prevIndexes.map((index, i) =>
-            i === projectIndex
-              ? (index + 1) % project.images.length
-              : index
+            i === projectIndex ? (index + 1) % project.images.length : index
           )
         );
       }, 3000)
@@ -144,11 +142,7 @@ const ProjectsPage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img
-                    src={open}
-                    alt=""
-                    className="openProjectLinkIconImg"
-                  />{" "}
+                  <img src={open} alt="" className="openProjectLinkIconImg" />{" "}
                   Github
                 </a>
               </div>
