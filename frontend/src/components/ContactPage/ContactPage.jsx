@@ -80,16 +80,15 @@ const ContactPage = () => {
                 <img src={whatsAppIcon} alt="WhatsApp" className="icon" /> Call
                 Me
               </a>
+              <a
+                href={Jakub_Stankiewicz_CV}
+                download
+                className="contactButton download"
+              >
+                <img src={pdfIcon} alt="PDF" className="icon" />
+                Download Resume
+              </a>
             </div>
-
-            <a
-              href={Jakub_Stankiewicz_CV}
-              download
-              className="contactButton download"
-            >
-              <img src={pdfIcon} alt="PDF" className="icon" />
-              Download Resume
-            </a>
           </div>
         </div>
       </div>

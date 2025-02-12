@@ -1,8 +1,5 @@
-
-
-
 @media (max-width: 768px) {
-    .app {
-        flex-direction: column
-    }
+  .app {
+    flex-direction: column;
+  }
 }
